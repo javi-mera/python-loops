@@ -4,6 +4,11 @@ def my_function(numbers):
     new_list = []
     for numb in numbers:
     #The magic go here:
+        if numb == 1:
+            new_list.append(numb)
+        elif numb == 0:
+            numb = "Yahoo"
+            new_list.append(numb)
         
     return new_list
 print(my_function(my_list))

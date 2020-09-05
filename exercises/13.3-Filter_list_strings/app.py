@@ -7,3 +7,12 @@ names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','Logan
 
 
 #Your code go here:
+
+def noAm(numb):
+    amNames = "am" in numb
+    if amNames == True:
+        return numb
+
+newNames = list(filter(noAm, names))
+
+print(newNames)

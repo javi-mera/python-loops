@@ -13,3 +13,9 @@ tasks = [
 
 #Your code go here:
 
+def finishedTask(item):
+    if item["done"] == True:
+        return item["label"]
+
+done = list(filter(finishedTask, tasks))
+print(done)
